@@ -1,5 +1,8 @@
 {
   "name": "@hexlet/code",
+  "bin": {
+  "gendiff": "src/gendiff.js"
+},
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/d8m8tra/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/d8m8tra/frontend-project-46/actions)",
   "homepage": "https://github.com/d8m8tra/frontend-project-46#readme",
