@@ -1,0 +1,25 @@
+name: github-ci
+
+# запускает воркфлоу при каждом пуше
+on: push 
+
+# описывает задачу (job) с именем (build)
+# которая будет выполняться на последней версии убунту
+jobs:
+    build:
+        runs-on: ubuntu-latest
+# шаги нашей задачи
+        steps:
+# клонирует (чекаут) нашу репу в рабочую дир-ию ранера
+# устанавиливает ноду и вкл. кеширование для ускорения сборки
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v3
+              with:
+                node-version: '22.x'
+                cache: 'npm'
+# выполняет make install
+            - run: make install  
+# выполняет запуск линтера
+            - run: make lint
+# выполняет запуск тестов
+            - run: make test
