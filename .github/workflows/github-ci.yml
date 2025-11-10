@@ -23,7 +23,6 @@ jobs:
             - run: make lint
 # выполняет запуск тестов
             - run: make test
-            - run: cat sonar-project.properties
             - name: SonarQube Scan
               uses: SonarSource/sonarqube-scan-action@fd88b7d7ccbaefd23d8f36f73b59db7a3d246602
               env:
