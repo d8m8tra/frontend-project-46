@@ -30,4 +30,3 @@ jobs:
                 SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
                 SONAR_PROJECT_KEY: d8m8tra_frontend-project-46
                 SONAR_ORGANIZATION: d8m8tra
-            
