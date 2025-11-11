@@ -13,10 +13,15 @@ const __dirname = dirname(__filename);
 const getFixturePath = (filename) => join(__dirname, '..', '__fixtures__', filename);
 const pathJSON1 = getFixturePath('file1.json');
 const pathJSON2 = getFixturePath('file2.json');
+const pathYML1 = getFixturePath('file1.yml')
+const pathYML2 = getFixturePath('file2.yml')
 
 // строка для сравнения 
 const expectStringJson = readFileSync(getFixturePath('expectedJSON.txt'), 'utf8');
 
-test('testing function gendiff(filepath1, filepath2, formatName = "json")', () => {
+test('testing function gendiff(filepath1, filepath2, format = "json")', () => {
   expect(gendiff(pathJSON1, pathJSON2, 'json')).toBe(expectStringJson);
+});
+test('testing function gendiff(filepath1, filepath2, format = "yml")', () => {
+  expect(gendiff(pathYML1, pathYML2, 'yml')).toBe(expectStringJson);
 });
