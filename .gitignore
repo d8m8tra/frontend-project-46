@@ -1,5 +1,2 @@
-/node_modules/
-*.log
-coverage
-.DS_Store
-demo.cast
+node_modules/
+coverage/

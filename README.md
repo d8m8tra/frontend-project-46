@@ -1,44 +1,46 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Raition/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Raition/frontend-project-46/actions)
-[![Node CI](https://github.com/Raition/frontend-project-46/actions/workflows/test-check.yml/badge.svg)](https://github.com/Raition/frontend-project-46/actions/workflows/test-check.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/66bb22d9b46099f6ce93/maintainability)](https://codeclimate.com/github/Raition/frontend-project-46/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/66bb22d9b46099f6ce93/test_coverage)](https://codeclimate.com/github/Raition/frontend-project-46/test_coverage)
+[![Actions Status](https://github.com/ARMINEPAL/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ARMINEPAL/frontend-project-46/actions)
 
-**Gendiff** – это утилита для сравнения двух файлов. Она отображает различия между файлами в человекочитаемом виде.
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ARMINEPAL_frontend-project-46&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ARMINEPAL_frontend-project-46)
 
-## Особенности:
+[![test](https://github.com/ARMINEPAL/frontend-project-46/actions/workflows/test-check.yml/badge.svg)](https://github.com/ARMINEPAL/frontend-project-46/actions/workflows/test-check.yml)
 
-- Поддержка JSON и YAML файлов
-- Простота использования из командной строки
-- Удобный вывод различий в форматах json, stylish, plain
+Описание
 
-## Системные требования:
+Gendiff — это CLI-утилита для сравнения двух файлов конфигурации и отображения разницы между ними.
 
-- Node.js версии 14.0 или выше
-- npm (обычно устанавливается вместе с Node.js)
+Поддерживаемые форматы файлов:
 
-> Поддерживаемые операционные системы: Windows, macOS и Linux.
+JSON
 
-## Установка:
+YAML / YML
 
-1. Склонируйте репозиторий с помощью команды: _"git clone https://github.com/Raition/frontend-project-46.git"_
-2. Перейдите в директорию проекта _cd frontend-project-46_
-3. Установите необходимые зависимости с помощью команды: _make install_
+Результат сравнения может быть выведен в нескольких форматах:
 
-## Общий синтаксис и доступные команды:
+1. Stylish (по умолчанию)
 
-- _gendiff -h_ : Вывод справочной информации по утилите
+2. Plain
 
-- _gendiff <файл1> <файл2>_ : Сравнение файлов с выводом в формате stylish (по умолчанию)
+3. Json
 
-- _gendiff -f plain <файл1> <файл2>_ : Сравнение с выводом в формате plain
+Демонстрация:
 
-- _gendiff -f json <файл1> <файл2>_ : Сравнение с выводом в формате json
+Сравнение плоских объектов (формат json) в stylish формате:
 
-- _make test_ : Для запуска тестов
+https://asciinema.org/a/9hWQg2EVN4tfnqmb
 
-- _make lint_ : Для проверки стиля кода
+Сравнение плоских объектов (формат yaml) в stylish формате:
 
-## Пример использования:
+https://asciinema.org/a/3lMQvdMsZw8Amein
 
-[![asciicast](https://asciinema.org/a/703199.svg)](https://asciinema.org/a/703199)
+Сравнение вложенных объектов в формате stylish:
+
+  https://asciinema.org/a/bcBcYRTCoDgUiIzB
+
+Сравнение вложенных объектов в формате plain:
+
+  https://asciinema.org/a/EmpEeO9wGKTQNSU1
+
+Сравнение вложенных объектов в формате json:
+
+  https://asciinema.org/a/yfUlEqyjx5ZSYZJk
